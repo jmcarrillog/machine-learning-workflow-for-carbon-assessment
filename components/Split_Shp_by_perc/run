@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+checkExitCode() {
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1;
+fi
+}
+
+BASEDIR=`dirname $0`
+
+. $BASEDIR/io.sh 1 1 2 "$@"
+
+set -x
+python $BASEDIR/Split_Shp_by_perc.py $INPUTS1 $PARAMS1 $OUTPUTS1 $OUTPUTS2
+
+checkExitCode
+
