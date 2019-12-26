@@ -1,0 +1,35 @@
+2019-08-08 18:31:52 (INFO): Default RAM limit for OTB is 128 MB
+2019-08-08 18:31:52 (INFO): GDAL maximum cache size is 593 MB
+2019-08-08 18:31:52 (INFO): OTB will use at most 4 threads
+2019-08-08 18:31:52 (INFO): Reading vector file 1/1
+2019-08-08 18:31:52 (INFO): Reading vector file 1/1
+2019-08-08 18:31:52 (INFO): Computing model file : ../../data/model.rf
+Training model...: 100% [**************************************************] (0 seconds)
+Validation...: 100% [**************************************************] (0 seconds)
+2019-08-08 18:31:52 (INFO): Predicted list size : 800
+2019-08-08 18:31:52 (INFO): ValidationLabeledListSample size : 800
+2019-08-08 18:31:52 (INFO): Training performances:
+2019-08-08 18:31:52 (INFO): Confusion matrix (rows = reference labels, columns = produced labels):
+    [1] [2] [3] [4] 
+[1] 108  37  55   0 
+[2]  42 131  27   0 
+[3]  35  17 147   1 
+[4]   1   0   0 199 
+
+2019-08-08 18:31:52 (INFO): Precision of class [1] vs all: 0.580645
+2019-08-08 18:31:52 (INFO): Recall of class    [1] vs all: 0.54
+2019-08-08 18:31:52 (INFO): F-score of class   [1] vs all: 0.559585
+
+2019-08-08 18:31:52 (INFO): Precision of class [2] vs all: 0.708108
+2019-08-08 18:31:52 (INFO): Recall of class    [2] vs all: 0.655
+2019-08-08 18:31:52 (INFO): F-score of class   [2] vs all: 0.680519
+
+2019-08-08 18:31:52 (INFO): Precision of class [3] vs all: 0.641921
+2019-08-08 18:31:52 (INFO): Recall of class    [3] vs all: 0.735
+2019-08-08 18:31:52 (INFO): F-score of class   [3] vs all: 0.685315
+
+2019-08-08 18:31:52 (INFO): Precision of class [4] vs all: 0.995
+2019-08-08 18:31:52 (INFO): Recall of class    [4] vs all: 0.995
+2019-08-08 18:31:52 (INFO): F-score of class   [4] vs all: 0.995
+
+2019-08-08 18:31:52 (INFO): Global performance, Kappa index: 0.641667
