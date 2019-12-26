@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+checkExitCode() {
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1;
+fi
+}
+
+BASEDIR=`dirname $0`
+
+. $BASEDIR/io.sh 1 4 1 "$@"
+. /usr/local/otb/OTB-6.6.1-Linux64/otbenv.profile
+
+set -x
+python $BASEDIR/Train_RF_Classifier.py $INPUTS1 $PARAMS1 $PARAMS2 $PARAMS3 $PARAMS4 $OUTPUTS1
+
+checkExitCode
+
